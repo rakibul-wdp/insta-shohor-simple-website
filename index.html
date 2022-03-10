@@ -79,21 +79,27 @@
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        <button class="accordion-button collapsed fw-bold fs-3" type="button" data-bs-toggle="collapse"
           data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-          Accordion Item #2
+          What does JavaScript event loop do...???
         </button>
       </h2>
       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
         aria-labelledby="panelsStayOpen-headingTwo">
         <div class="accordion-body">
-          
+          <strong>The event loop is the secret behind JavaScript’s asynchronous programming.</strong> JavaScript event loop is a system that says which process JavaScript code run. It collects processes and executes code.
+          If you think of a scenario like a heap, engine, web API, callback queue. First of all JavaScript code runs
+          synchronously. But it's not true all the time. In some cases, JavaScript code runs asynchronous (fetch, timeOut, etc).
+          When the engine sees an asynchronous function or method it sends a web API for waiting. <p>After finishing synchronously
+          code web API send callback queue and lastly render queue (event loop) send the code in the engine. Finally, it run.
+          There are a few kinds of worlds related to event loop like stack(function calls form a stack of frames), Heap(large
+          region of memory), Queue(list of code to be processed), Run to completion. And also in this process no time waste user.</p>
         </div>
       </div>
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        <button class="accordion-button collapsed fw-bold fs-3" type="button" data-bs-toggle="collapse"
           data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
           aria-controls="panelsStayOpen-collapseThree">
           Accordion Item #3
