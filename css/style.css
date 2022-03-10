@@ -245,6 +245,13 @@ img {
   display: none;
 }
 
+#liked-heading {
+  display: none;
+}
+#report-heading {
+  display: none;
+}
+
 @media only screen and (max-width: 992px) {
   #posts {
     grid-template-columns: repeat(2, 1fr);
