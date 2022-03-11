@@ -102,13 +102,46 @@
         <button class="accordion-button collapsed fw-bold fs-3" type="button" data-bs-toggle="collapse"
           data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
           aria-controls="panelsStayOpen-collapseThree">
-          Accordion Item #3
+          Difference between local storage and session storage...!!!
         </button>
       </h2>
       <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
         aria-labelledby="panelsStayOpen-headingThree">
         <div class="accordion-body">
-          
+          Actually, sessionStorage and localStorage are mostly similar. The main difference is localStorage data doesn't expire
+          (not delete). But sessionStorage data is cleared when the web page is closed. Every time when opening a new tab in the
+          browser a new data is assigned this tab.
+          <table class="table mt-3">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Local Storage</th>
+                <th scope="col">Session Storage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Capacity</th>
+                <td>10mb</td>
+                <td>5mb</td>
+              </tr>
+              <tr>
+                <th scope="row">Accessible from</th>
+                <td>Any window</td>
+                <td>Same tab</td>
+              </tr>
+              <tr>
+                <th scope="row">Expires</th>
+                <td>Never</td>
+                <td>On tab close</td>
+              </tr>
+              <tr>
+                <th scope="row">Storage Location</th>
+                <td>Browser only</td>
+                <td>Browser only</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
